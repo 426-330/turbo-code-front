@@ -14,5 +14,10 @@
   "observability": {
     "enabled": true
   },
-  "upload_source_maps": true
+  "upload_source_maps": true,
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "ailinklab-user",
+    "database_id": "3187f2c8-799c-44ab-8f40-df8810219c0f"
+  }]
 }
