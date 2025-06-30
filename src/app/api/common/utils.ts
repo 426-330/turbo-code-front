@@ -19,7 +19,8 @@ export const fakeDbCheckSubscription = async (user: UserIdentifier): Promise<Sub
 };
 
 // 伪数据库：写入订阅
-export const fakeDbCreateSubscription = async () => {
+export const fakeDbCreateSubscription = async (identifier: UserIdentifier, productId: string) => {
   // 这里用伪逻辑，实际应写入数据库
+  console.info('fakeDbCreateSubscription', identifier, productId);
   return true;
 }; 
