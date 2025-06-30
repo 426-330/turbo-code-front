@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+
 import { getUserIdentifier, fakeDbCheckSubscription } from '../../common/utils';
 import type { CheckSubscriptionRequest, CheckSubscriptionResponse } from '../../common/types';
 

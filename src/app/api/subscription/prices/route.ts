@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+
 import stripe from '../../common/stripe';
 import type { PricesRequest, PricesResponse } from '../../common/types';
 
@@ -16,7 +17,7 @@ export async function POST(req: NextRequest) {
   }
 }
 
-export async function GET(req: NextRequest) {
+export async function GET() {
   const prices = await stripe.prices.list({ active: true });
   return NextResponse.json({ prices: prices.data });
 }
