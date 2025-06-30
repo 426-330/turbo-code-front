@@ -2,8 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  env: { DB: process.env.DB },
-  experimental: { runtime: 'experimental-edge' },
+  env: { DB: process.env.DB }
 };
 
 export default nextConfig;
